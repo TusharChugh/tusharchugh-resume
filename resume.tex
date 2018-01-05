@@ -1,0 +1,258 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Tushar}{Chugh}{ \urlstyle{same}\url{http://www.tusharchugh.com} \\
+\href{mailto:tusharchugh19@gmail.com}{tusharchugh19@gmail.com} | 412.499.0099
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.36\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Carnegie Mellon University}
+\descript{M.S. in Robotic Systems Development}
+\location{Aug'15 - Dec'16 | Pittsburgh GPA: 3.75}
+\sectionsep
+
+\subsection{Young India Fellowship (with University of Pennsylvania)}
+\descript{Master's Program in Liberal Arts}
+\location{Jun'11-May'12 | New Delhi, India}
+\begin{tightemize}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\item Selected in top 57 across India \\
+\item Developed haptic belt for visually impaired to help them walk in the indoor environments by helping in avoiding obstacles. (Prof. Rahul M. , UPenn)
+\end{tightemize}
+\sectionsep
+
+\subsection{Maharshi Dayanand} 
+\subsection{University}
+\descript{B.TECH in Electronics and Communication Engineering}
+\location{Jul'07 - May'11 | Faridabad, IN GPA:71/100}
+Awarded chairman scholarship at MRCE \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/tusharchugh}{\custombold{tusharchugh}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/tusharchugh}{\custombold{tusharchugh}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Machine Learning \\
+Computer Vision \\
+Robot Autonomy \\
+Embedded Read Time Systems (Linux Kernel) \\
+Principles of software construction \\
+Systems Engineering \\
+\sectionsep
+
+\subsection{Undergrad and YIF}
+Embedded Systems \\
+Statistics \\
+Linear Algebra \\
+Digital Electronics \\
+Art Appreciation \\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C++ \textbullet{}  Java \textbullet{} MATLAB \textbullet{} Python \\
+\sectionsep
+\subsection{Platform | Framework | IDE}
+LINUX \textbullet{} ROS \textbullet{} OPENCV \textbullet{} TENSORFLOW\\
+\textbullet{} Android Dev \textbullet{} Visual Studio (Windows)\\
+\sectionsep
+\subsection{Hardware}
+Raspberry Pi \textbullet{} Arduino(also mbed, ATLMEL and PIC)  \textbullet{} PCB Designing (Basics)  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.63\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{General Motors}
+\descript{| Autonomous Perception Software}
+\location{Feb'17 – Present | Warren, MI}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developing algorithms for detecting objects with short range radars, including writing ROS based drivers 
+\item Created a framework and algorithms for analyzing images to verify working of sensor cleaning system at manufacturing 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Qualcomm Research Center}
+\descript{| Software Intern }
+\location{May'16 – Aug'16 | San Diego, CA}
+\begin{tightemize}
+\item  Worked on development of  \href{https://developer.qualcomm.com/software/snapdragon-neural-processing-engine}{\custombold{neural network inference engine}} to be used in drones, autonomous cars and other embedded applications.
+\item Contributed in bringing up the new ASIC emulator platform, developed code suit (in C/assembly) and programmers guide to get started with mapping networks like AlexNet.
+\item Designed a smart cap for visually impaired which describes the description of the scene using this deep learning platform
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Microsoft India (R\&D)}
+\descript{| Software Development Engineer 2}
+\location{May'12 – Jul'15 | Hyderabad, India}
+\begin{tightemize}
+\item Created Natural User Interfaces 
+at Modern Innovation Group including Kinect Ripple, TapNMeet, smart meeting experiences
+\item Initialized Internet of Things (IoT) related development for Microsoft India and created a IoT lab for makers
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Microsoft Research, Cambridge}
+\descript{| Sensors and Devices}
+\location{Aug'13 – Jan'14 | Cambridge, UK}
+\begin{tightemize}
+\item  Researched on a novel way for quick \& low cost printing of electronic circuits using an inkjet printer with silver nanoparticles.
+\item Developed Windows Device Peripherals including a customized power controller and reset (PCB layout \& firmware) 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{National Robotics Engineering Center, Pittsburgh}
+\descript{| Sensors and Devices}
+\location{Aug'13 – Jan'14 | Cambridge, UK}
+\begin{tightemize}
+\item  Researched on a novel way for quick \& low cost printing of electronic circuits using an inkjet printer with silver nanoparticles.
+\item Developed Windows Device Peripherals including a customized power controller and reset (PCB layout \& firmware) 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Publications
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications}
+\begin{itemize}
+\item \href{http://research.microsoft.com/pubs/207114/2014-02-14\%20CHI\%20sticker\%20circuits.pdf}{\custombold{Circuit Stickers}}: Peel-and-Stick Construction of Interactive Electronic Prototypes, ACM CHI, 2014 Canada, Steve Hodge, Et Al.
+\item \href{http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=5558532&url=http\%3A\%2F\%2Fieeexplore.ieee.org\%2Fxpls\%2Fabs_all.jsp\%3Farnumber\%3D5558532}{\custombold{Vector2703}}: An Autonomous Ground Vehicle, ICMEE 2010, IEEE Explore Japan, T. Chugh, M. Gupta
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rlll}
+2016     & 3\textsuperscript{rd} & Amazon Alexa & \href{https://developer.amazon.com/blogs/alexa/post/3d92023f-8dea-4a90-8ead-e5a94f74edcd/alexa-pioneers-tushar-chugh-wants-to-use-voice-to-change-the-world-for-the-visually-impaired}{\custombold{Internet of Voice Challenge}}\\
+2016	     & 1\textsuperscript{st}/300 & Qualcomm & \href{https://developer.qualcomm.com/project/smart-cap}{\custombold{Hackmobile }}\\
+2013     & Editor's choice  & Maker Faire, NYC & Microsoft Research demo \\
+2013	     & Top 12 Asia  & Wall Street Journal &  \href{https://www.wsj.com/articles/SB10000872396390444246904577574422852969682?KEYWORDS=asian+innovation+awards}{\custombold{Best Asian Innovations}} \\
+2013     & 2\textsuperscript{nd} & Health 2.0, SF & Developer World Cup for Health \\
+2012     & Funding & Govt of India & Power of Ideas - Startup Contest \\
+2012     & 1st(India) &  Accenture and Yahoo & Innovation Jockeys \\
+2010     & 1st(India) & Microsoft & Imagine Cup, Poland
+\end{tabular}
+\sectionsep
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     SOCIETIES
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies} 
+
+% \begin{tabular}{rll}
+% 2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+% 2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+% 2012   &  National  & Golden Key International Honor Society\\
+% 2012   &  National   & National Society of Collegiate Scholars\\
+% \end{tabular}
+% \sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
